@@ -3,7 +3,7 @@ function ListGroup() {
 
   return (
     <>
-      <h1>My List</h1>
+      <h1>My List ({items.length})</h1>
       <ul className="list-group">
         {items.map((item) => (
           <li key={item}>{item}</li>
