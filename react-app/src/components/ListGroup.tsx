@@ -1,5 +1,5 @@
 function ListGroup() {
-  const items = ["New York", "Tokyo", "Cairo", "London", "Paris"];
+  const items = ["New York", "Cairo", "London", "Paris", "Your Mom's House"];
 
   return (
     <>
@@ -9,6 +9,17 @@ function ListGroup() {
           <li key={item}>{item}</li>
         ))}
       </ul>
+      {items.length > 0 ? (
+        <>
+          <hr></hr>
+          <h3>You've got stuff</h3>
+        </>
+      ) : (
+        <>
+          <hr></hr>
+          <h3>You've got no stuff</h3>
+        </>
+      )}
     </>
   );
 }
