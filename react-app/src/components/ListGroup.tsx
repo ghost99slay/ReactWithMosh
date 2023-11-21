@@ -1,13 +1,19 @@
 import { useState } from "react";
 
-function ListGroup() {
-  let items = ["New York", "Cairo", "London", "Paris", "Your Mom's House"];
+interface ListGroupProps {
+  items: string[];
+  heading: string;
+}
+
+function ListGroup({ items, heading }: ListGroupProps) {
   // Hook
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <>
-      <h1>My List ({items.length})</h1>
+      <h1>
+        {heading} ({items.length})
+      </h1>
       <ul className="list-group">
         {items.map((item, index) => (
           <li
