@@ -1,7 +1,7 @@
 import ListGroup from "./components/ListGroup";
 
 function App() {
-  let items = ["New York", "Cairo", "London", "Paris", "Your Mom's House"];
+  let items = ["Bananas", "Oranges", "Grapes", "Apples", "Your Mom"];
 
   const handleSelectItem = (item: string) => {
     console.log(item);
@@ -11,7 +11,7 @@ function App() {
     <div>
       <ListGroup
         items={items}
-        heading="Cities"
+        heading="Groceries"
         onSelectItem={handleSelectItem}
       />
     </div>
