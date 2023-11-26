@@ -1,19 +1,12 @@
-import ListGroup from "./components/ListGroup";
+import Alert from "./components/Alert";
+import Message from "./components/Message";
 
 function App() {
-  let items = ["Bananas", "Oranges", "Grapes", "Apples", "Your Mom"];
-
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  };
-
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="Groceries"
-        onSelectItem={handleSelectItem}
-      />
+      <Alert>
+        <Message />
+      </Alert>
     </div>
   );
 }
